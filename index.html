@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Facebook - entre ou cadastre-se</title>
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,700,700i&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__logo">
+                    <a href="index.php" title="Ir para a página incial do Facebook"><h2>facebook</h2></a>
+                </div>
+
+                <form method="POST" class="header__login">
+                    <div class="header__login__box">
+                        <label for="login">Email ou telefone</label><br>
+                        <input type="text" id="login" name="login" required>
+                    </div>
+
+                    <div class="header__login__box">
+                        <label for="senha">Senha</label><br>
+                        <input type="password" id="senha" name="senha" required>
+                    </div>
+
+                    <div class="header__login__box">
+                        <input type="submit" name="acao" value="Entrar">
+                    </div><br>
+
+                    <a href="" class="esqueceu-conta">Esqueceu a conta?</a>
+                </form>
+
+                <div class="clear"></div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="main__conteudo">
+                <div class="container">
+                    <div class="main__conteudo__img">
+                        <h2>
+                            O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.
+                        </h2>
+                        <img src="img/pessoas.png" alt="Imagem">
+                    </div>
+
+                    <div class="main__conteudo__cadastrar">
+                        <h2>Abra uma conta</h2>
+
+                        <h3>É rápido e fácil.</h3>
+
+                        <form action="" method="post" class="criar-conta">
+                            <div class="w50">
+                                <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                            </div>
+
+                            <div class="w50 separar">
+                                <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome" required>
+                            </div>
+
+                            <div class="w100">
+                                <input type="text" id="email-cel" name="email-cel" placeholder="Celular ou email" required>
+                            </div>
+
+                            <div class="w100">
+                                <input type="password" id="novasenha" name="novasenha" placeholder="Nova senha" required>
+                            </div>
+
+                            <div class="w100">
+                                <h2>Data de nascimento</h2>
+                                <select name="nascimento-dia" id="nascimento-dia" class="nascimento">
+                                    <?php
+                                        for($i = 1; $i<=31; $i++){
+                                    ?>
+                                    <option value="<?php echo $i;?>"><?php echo $i;?></option>
+
+                                    <?php }?>
+                                </select>
+
+                                <select name="nascimento-mes" id="nascimento-mes" class="nascimento">
+                                    <option value="agosto">Agosto</option>
+                                </select>
+
+                                <select name="nascimento-ano" id="nascimento-ano" class="nascimento">
+                                    <?php
+                                        for($i = 2019; $i >= 1900; $i--){
+                                    ?>
+                                    <option value="<?php echo $i;?>"><?php echo $i;?></option>
+
+                                    <?php }?>
+                                </select>
+
+                                <div class="clear"></div>
+                            </div>
+
+                            <div class="w100">
+                                <div class="input-radio">
+                                    <h2>Gênero</h2>
+                                    <label for="feminino">
+                                        <input type="radio" name="sexo" value="feminino" id="feminino">
+                                        Feminino
+                                    </label>
+
+                                    <label for="masculino">
+                                        <input type="radio" name="sexo" value="masculino" id="masculino">
+                                        Masculino
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="w100">
+                                <input type="submit" id="cadastrar" name="cadastrar" value="Cadastre-se">
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="clear"></div>
+                </div>
+            </section>
+        </main>
+
+        <section class="idiomas">
+            <div class="container">
+                <a href="#"  id="selected-lingua">Português (BR)</a>
+                <a href="#">Português (BR)</a>
+                <a href="#">Português (BR)</a>
+                <a href="#">Português (BR)</a>
+                <a href="#">Português (BR)</a>
+                <a href="#">Português (BR)</a>
+                <a href="#">Português (BR)</a>
+                <a href="#">Português (BR)</a>
+                <a href="#">Português (BR)</a>
+            </div>
+
+            <div class="container" id="links">
+                <a href="#">Lorem Ipsum</a>
+                <a href="#">Lorem Ipsum</a>
+                <a href="#">Lorem Ipsum</a>
+                <a href="#">Lorem Ipsum</a>
+                <a href="#">Lorem Ipsum</a>
+                <a href="#">Lorem Ipsum</a>
+                <a href="#">Lorem Ipsum</a>
+                <a href="#">Lorem Ipsum</a>
+                <a href="#">Lorem Ipsum</a>
+                <a href="#">Lorem Ipsum</a>
+                <a href="#">Lorem Ipsum</a>
+                <a href="#">Lorem Ipsum</a>
+                <a href="#">Lorem Ipsum</a>
+                <a href="#">Lorem Ipsum</a>
+                <a href="#">Lorem Ipsum</a>
+                <a href="#">Lorem Ipsum</a>
+                <a href="#">Lorem Ipsum</a>
+                <a href="#">Lorem Ipsum</a>
+                <a href="#">Lorem Ipsum</a>
+                <a href="#">Lorem Ipsum</a>
+                <a href="#">Lorem Ipsum</a>
+                <a href="#">Lorem Ipsum</a>
+                <a href="#">Lorem Ipsum</a>
+                <a href="#">Lorem Ipsum</a>
+                <a href="#">Lorem Ipsum</a>
+                <a href="#">Lorem Ipsum</a>
+            </div>
+        </section>
+    </body>
+</html>

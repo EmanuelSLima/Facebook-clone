@@ -1,0 +1,251 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    font-family: 'Muli', sans-serif;
+}
+/*Classes auxiliares*/
+.container{
+    max-width: 1050px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+.clear{
+    clear: both;
+}
+.w100{
+    width: 100%;
+    float: left;
+}
+.w50{
+    width: 50%;
+    float: left;
+}
+/*Classe header*/
+.header{
+    padding: 10px 0;
+    background-color: #3b5998;
+}
+.header__logo{
+    color: white;
+    float: left;
+}
+.header__logo a{
+    color: white;
+    text-decoration: none;
+}
+.header__logo h2{
+    font-size: 41px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.header__login{
+    float: right;
+}
+.header__login__box{
+    display: inline-block;
+    margin-right: 10px;
+}
+.header__login__box label{
+    color: white;
+    font-size: 13px;
+}
+.header__login__box input[name=login],
+.header__login__box input[name=senha]{
+    margin-top: 5px;
+    height: 22px;
+    width: 150px;
+}
+.header__login__box input[type=submit]{
+    outline: none;
+    border: none;
+    height: 22px;
+    padding: 0 8px;
+    cursor: pointer;
+    color: white;
+    background-color: #5a78b8;
+    font-weight: bold;
+}
+.header__login__box input[type=submit]:hover{
+    background-color:  #4f6dad;
+}
+.esqueceu-conta{
+    float: right;
+    margin-right: 115px;
+    margin-top: 3px;
+    text-decoration: none;
+    color: #9cb4d8;
+    font-size: 13px;
+}
+.esqueceu-conta:hover{
+    text-decoration: underline;
+}
+/*Classe main*/
+.main__conteudo{
+    background: linear-gradient(white, #d3d8e8);
+    padding: 20px 0 40px 0;
+}
+.main__conteudo__img{
+    width: 50%;
+    float: left;
+}
+.main__conteudo__img h2{
+    color: #0e385f;
+    font-size: 21px;
+    margin-top: 20px;
+}
+.main__conteudo__img img{
+    margin-top: 10px;
+    background-size: cover;
+}
+.main__conteudo__cadastrar{
+    padding: 0 50px;
+    width: 50%;
+    float: left;
+}
+.main__conteudo__cadastrar > h2{
+    font-size: 36px;
+    font-weight: bold;
+}
+.main__conteudo__cadastrar h3{
+    font-size: 18px;
+    margin: 10px 0;
+}
+.separar{
+    padding-left: 10px;
+}
+input[name=nome],
+input[name=sobrenome]{
+    width: 100%;
+    margin: 10px 0;
+    padding-left: 5px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid silver;
+}
+input[name=email-cel],
+input[name=novasenha]{
+    width: 100%;
+    margin: 5px 0;
+    padding-left: 5px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid silver;
+}
+#nome::placeholder{
+    color: #acacad;
+    font-size: 18px;
+    font-weight: lighter;
+}
+#sobrenome::placeholder{
+    color: #acacad;
+    font-size: 18px;
+    font-weight: lighter;
+}
+#email-cel::placeholder{
+    color: #acacad;
+    font-size: 18px;
+    font-weight: lighter;
+}
+#novasenha::placeholder{
+    color: #acacad;
+    font-size: 18px;
+    font-weight: lighter;
+}
+input[name=cadastrar]{
+    width: 50%;
+    background-color: #549738;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    height: 38px;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: 17px;
+}
+input[name=cadastrar]:hover{
+    background-color: #5f9c45;
+}
+/*Select option*/
+.criar-conta h2{
+    color: #acacad;
+    font-size: 18px;
+    margin: 15px 0 5px 0;
+}
+.nascimento{
+    float: left;
+}
+/*Input-radio*/
+.input-radio{
+    margin: 20px 0;
+}
+.input-radio label{
+    font-size: 18px;
+    font-weight: bolder;
+    margin-right: 20px;
+}
+/*Idiomas*/
+.idiomas{
+    padding: 40px 0;
+}
+.idiomas > .container{
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+.idiomas a{
+    text-decoration: none;
+    font-size: 11px;
+    margin-right: 10px;
+    color: #365899;
+}
+#selected-lingua{
+    color: rgb(161, 161, 161);
+}
+#links{
+    border: 0;
+}
+
+/*Formatacao para dispositivos mobiles*/
+@media screen and (max-width: 768px){
+    .header{
+        text-align: center;
+    }
+    .header__logo{
+        width: 100%;
+        float: none;
+    }
+    .header__login{
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .header__login__box{
+        display: block;
+        margin-top: 15px;
+    }
+    .esqueceu-conta{
+        float: none;
+        margin: 0;
+    }
+    .header__login__box input[name=login],
+    .header__login__box input[name=senha]{
+        width: 90%;
+        height: 30px;    
+    }
+    .main__conteudo__img{
+        display: none;
+    }
+    .main__conteudo__cadastrar{
+        width: 100%;
+    }
+    .header__login__box input[type=submit]{
+        width: 150px;
+    }
+}
